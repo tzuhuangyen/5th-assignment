@@ -12095,15 +12095,19 @@ a:hover {
 }
 
 .container {
-  margin-left: 32px;
-  margin-right: 32px;
+  width: 918px;
   padding: 0;
+}
+
+.border-button {
+  border-bottom: 1px solid #ced4da;
 }
 
 .header {
   width: 350px;
   padding-left: 32px;
   padding-top: 32px;
+  margin-right: 32px;
 }
 
 .header h1, .header .h1 {
@@ -12170,8 +12174,9 @@ a:hover {
 }
 
 .navbar {
-  margin: 32px;
-  padding-top: 8px;
+  padding: 0;
+  margin-top: 32px;
+  margin-bottom: 44px;
 }
 
 .navbar .navbar-brand {
@@ -12184,6 +12189,10 @@ a:hover {
   font-weight: bold;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
 .dropdown-menu {
   border: none;
 }
@@ -12194,6 +12203,7 @@ a:hover {
   font-size: 16px;
   background-color: white;
   border: none;
+  padding: 0;
 }
 
 .dropdown .material-symbols-outlined {
@@ -12228,6 +12238,7 @@ a:hover {
 
 .list-group-item {
   padding: 12px;
+  height: 62px;
 }
 
 .list-group-item span {
@@ -12252,26 +12263,24 @@ a:hover {
   color: #212529;
 }
 
-.card .container {
-  margin-left: 50px;
+.col-8 .container {
   width: 584px;
-  margin-right: 65px;
-  margin-left: 16px;
+  margin-right: 0;
   padding-right: 0;
-  margin-bottom: 17.5px;
 }
 
 .card-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card-header span {
-  color: #212529;
+  padding: 12px;
+  height: 62px;
 }
 
 .card-header p {
+  font-size: 12px;
+  color: #212529;
+  margin-bottom: 4px;
+}
+
+.card-header h3, .card-header .h3 {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -12287,8 +12296,17 @@ a:hover {
   font-weight: 900;
 }
 
+.material-symbols-outlined:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .reply-text {
+  width: 488px;
   font-size: 14px;
+  padding-left: 50px;
 }
 
 .reply-form {
