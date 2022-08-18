@@ -12094,6 +12094,12 @@ a:hover {
   display: none;
 }
 
+.container {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 0;
+}
+
 .header {
   width: 350px;
   padding-left: 32px;
@@ -12164,17 +12170,22 @@ a:hover {
 }
 
 .navbar {
-  margin: 36px 32px 0 36px;
-  padding-top: 0;
+  margin: 32px;
+  padding-top: 8px;
 }
 
 .navbar .navbar-brand {
   color: black;
+  font-weight: 900;
 }
 
 .navbar .nav-link {
   color: black;
   font-weight: bold;
+}
+
+.dropdown-menu {
+  border: none;
 }
 
 .dropdown .btn-secondary {
