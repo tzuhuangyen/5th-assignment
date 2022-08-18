@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- all.css -->
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <header class="header bg-light">
+        <div class="navGroup">
+          <div>
+            <h1><img src="./assets/images/logo-ANSWER.svg" alt="logo" /></h1>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="material-symbols-outlined"> bar_chart </span>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <span class="material-symbols-outlined"> forum </span>
+                <a class="nav-link" href="#">Question</a>
+              </li>
+              <li class="nav-item">
+                <span class="material-symbols-outlined"> assignment </span>
+                <a class="nav-link" href="#">Assignment</a>
+              </li>
+              <li class="nav-item">
+                <span class="material-symbols-outlined"> video_library </span>
+                <a class="nav-link" href="#">Course</a>
+              </li>
+              <li class="nav-item">
+                <span class="material-symbols-outlined"> group </span>
+                <a class="nav-link" href="admin.html">Admin</a>
+              </li>
+
+              <li class="nav-item">
+                <span class="material-symbols-outlined"> settings </span>
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-admin d-flex mb-5">
+            <div><img src="./assets/images/andychen.jpeg" alt="andy" /></div>
+            <div>
+              <div>
+                <p class="card-text">Andy Chen</p>
+                <span>andy0401@mail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <%- contents %>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

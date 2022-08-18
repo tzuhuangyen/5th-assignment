@@ -1,0 +1,161 @@
+.navbar {
+  margin: 36px 32px 0 36px;
+  padding-top: 0;
+  .navbar-brand {
+    color: black;
+  }
+  .nav-link {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+// all(4) dropdown
+.dropdown {
+  .btn-secondary {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+  }
+  .material-symbols-outlined {
+    color: green;
+  }
+}
+
+.listGroup {
+  .list-title {
+    display: flex;
+    h2 {
+      margin-right: 50px;
+    }
+    button {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      border-width: 0;
+      background-color: white;
+      span {
+        color: green;
+      }
+    }
+  }
+}
+
+.list-group-item {
+  padding: 12px;
+  span {
+    color: #212529;
+    font-size: 12px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .name {
+    font-size: 12px;
+    color: #6c757d;
+  }
+}
+
+.list-group-item.active {
+  background-color: #f8f9fa;
+  border-color: #ced4da;
+  color: #212529;
+}
+
+.card {
+  .container {
+    margin-left: 50px;
+    width: 584px;
+    margin-right: 65px;
+    margin-left: 16px;
+    padding-right: 0;
+    margin-bottom: 17.5px;
+  }
+  // .name2 {
+  //   margin-bottom: 0;
+  //   font-weight: bold;
+  // }
+}
+.card-header {
+  align-items: center;
+  span {
+    color: #212529;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.card-body {
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+.material-symbols-outlined {
+  font-size: 24px;
+  height: 24px;
+  font-weight: 900;
+}
+
+// 回覆區
+.reply-text {
+  font-size: 14px;
+}
+
+.reply-form {
+  border: 1px solid #ced4da;
+  margin-bottom: 32px;
+  display: none;
+}
+.reply-form-header {
+  display: flex;
+  justify-content: start;
+
+  padding: 16px 24px;
+
+  border-bottom: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  align-items: center;
+  select {
+    margin-right: 24px;
+    width: 100px;
+    border: none;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    a {
+      margin-right: 30px;
+      span {
+        color: black;
+      }
+    }
+  }
+}
+
+.reply-form-body {
+  textarea {
+    height: 265px;
+    width: 100%;
+    resize: none;
+    border: none;
+  }
+}
+
+.reply-form-btn {
+  text-align: right;
+
+  .btn {
+    padding: 8px 32px;
+  }
+}
