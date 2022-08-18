@@ -8,7 +8,7 @@ current: index
 <main>
   <!-- Assignment nav-->
   <nav
-    class="navbar navbar-expand-lg container d-flex justify-content-between align-items-center"
+    class="navbar container d-flex justify-content-between align-items-center"
   >
     <div class="d-flex align-items-center">
       <a class="navbar-brand" href="#">Assignment</a>
@@ -41,7 +41,7 @@ current: index
       </div>
     </div>
     <!-- search &alarm icon -->
-    <div class="pe-5">
+    <div>
       <span class="material-symbols-outlined me-4"> search </span>
       <span class="material-symbols-outlined"> notifications_active </span>
     </div>
@@ -52,22 +52,26 @@ current: index
   <section class="container">
     <!-- all4 dropdown btn -->
     <div class="dropdown d-flex justify-content-between align-items-center">
-      <div>
-        <button
-          class="btn btn-secondary dropdown-toggle"
+      <div class="mb-2">
+        <div
+          class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center"
           type="button"
           id="dropdownMenuButton1"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          All(4)
-        </button>
+          All(4)<span class="material-symbols-outlined ms-2">
+            expand_more
+          </span>
+        </div>
+
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
       </div>
+
       <span>2 comments</span>
     </div>
     <div class="row">
@@ -153,10 +157,12 @@ current: index
         <div class="container">
           <!-- 題目標題 -->
           <div class="card">
-            <div class="card-header d-flex justify-content-between">
+            <div
+              class="card-header d-flex justify-content-between align-items-center"
+            >
               <div>
-                <span>Chapter Assignment 2 / HTML&CSS</span><br />
-                <p>Please check this file for me, thanks!</p>
+                <p>Chapter Assignment 2 / HTML&CSS</p>
+                <h3 class="m-0">Please check this file for me, thanks!</h3>
               </div>
               <span class="material-symbols-outlined"> more_vert </span>
             </div>
@@ -179,21 +185,22 @@ current: index
                 </div>
               </div>
               <!-- 發問者訊息內容  -->
-              <div class="container border-bottom border-dark">
-                <p class="reply-text">
+              <div class="container">
+                <p class="reply-text border-button">
                   Hi Teacher, the attached file is my homework of chapter 2. And
                   here comes a question: Why in the following code the height of
-                  the div is bigger than the height of the img ? There is a gap
-                  below the image, but it doesn’t seems to be a padding/margin.
-                  What is the gap or extra space below image?
+                  the<span class="text-success">div </span> is bigger than the
+                  height of the <span class="text-success">img </span>? There is
+                  a gap below the image, but it doesn’t seems to be a
+                  padding/margin. What is the gap or extra space below image?
+                  <a
+                    href="#"
+                    class="btn btn-primary fileDownload d-flex mb-3 mt-3"
+                    download="HW-2-David.zip"
+                    ><span class="material-symbols-outlined"> attach_file </span
+                    >HW-2-David.zip</a
+                  >
                 </p>
-                <a
-                  href="#"
-                  class="btn btn-primary fileDownload d-flex mb-3"
-                  download="HW-2-David.zip"
-                  ><span class="material-symbols-outlined"> attach_file </span
-                  >HW-2-David.zip</a
-                >
               </div>
               <!-- 回覆區 -->
               <!-- 回覆者名字和時間  -->
@@ -232,10 +239,13 @@ current: index
                     <br />
                     <br />
 
-                    • adjust the vertical-align of the image to position it
-                    elsewhere (e.g. the middle ) or 　
+                    • adjust the
+                    <span class="text-success">vertical-align </span>of the
+                    image to position it elsewhere (e.g. the
+                    <span class="text-success">middle </span> ) or 　
                     <br />
-                    • change the display so it isn’t inline.
+                    • change the <span class="text-success">display </span> so
+                    it isn’t inline.
                   </p>
                 </div>
               </div>
@@ -320,7 +330,7 @@ current: index
             <!-- 表尾按鈕 -->
             <div class="footer-btn mt-3 d-flex justify-content-between pr-8">
               <!-- arrow icon -->
-              <div class="d-flex justify-content-between px-4 mb-4">
+              <div class="d-flex justify-content-between mb-4">
                 <nav aria-label="Page navigation example">
                   <ul class="pagination">
                     <li class="page-item">
