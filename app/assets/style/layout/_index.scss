@@ -1,8 +1,10 @@
 .navbar {
-  margin: 36px 32px 0 36px;
-  padding-top: 0;
+  margin: 32px;
+  padding-top: 8px;
+
   .navbar-brand {
     color: black;
+    font-weight: 900;
   }
   .nav-link {
     color: black;
@@ -11,6 +13,9 @@
 }
 
 // all(4) dropdown
+.dropdown-menu {
+  border: none;
+}
 .dropdown {
   .btn-secondary {
     color: black;
