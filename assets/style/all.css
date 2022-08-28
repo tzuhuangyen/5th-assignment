@@ -12094,27 +12094,22 @@ a:hover {
   display: none;
 }
 
-.container {
-  width: 918px;
-  padding: 0;
-}
-
 .border-button {
   border-bottom: 1px solid #ced4da;
 }
 
-.header {
-  width: 350px;
+.nav {
+  width: 296px;
   padding-left: 32px;
   padding-top: 32px;
   margin-right: 32px;
 }
 
-.header h1, .header .h1 {
+.nav h1, .nav .h1 {
   margin-bottom: 32px;
 }
 
-.header .nav-item {
+.nav .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12124,7 +12119,7 @@ a:hover {
   margin-bottom: 26px;
 }
 
-.header .nav-item .nav-link {
+.nav .nav-item .nav-link {
   padding-top: 0;
   padding-bottom: 0;
   color: #212529;
