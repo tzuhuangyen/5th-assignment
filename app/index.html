@@ -23,7 +23,7 @@ current: index
       ></button>
       <div class="dropdown">
         <a
-          class="btn btn-secondary dropdown-toggle"
+          class="btn btn-secondary dropdown-toggle d-flex"
           href="#"
           role="button"
           id="dropdownMenuLink"
@@ -31,8 +31,8 @@ current: index
           aria-expanded="false"
         >
           All Courses
+          <span class="material-symbols-outlined ms-2"> expand_more </span>
         </a>
-
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <li><a class="dropdown-item" href="#">Action</a></li>
           <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -75,7 +75,7 @@ current: index
       <span>2 comments</span>
     </div>
     <div class="row">
-      <!-- all4清單 -->
+      <!-- 左邊 all4清單 -->
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
           <a
@@ -151,12 +151,10 @@ current: index
           >
         </div>
       </div>
-
-      <!-- list-item/ detail card-->
+      <!-- 右邊 list-item/ detail card-->
       <div class="col-8">
-        <div class="container">
-          <!-- 題目標題 -->
           <div class="card">
+            <!-- 發問者標題 -->
             <div
               class="card-header d-flex justify-content-between align-items-center"
             >
@@ -166,11 +164,9 @@ current: index
               </div>
               <span class="material-symbols-outlined"> more_vert </span>
             </div>
-            <!-- 發問題和回覆區 -->
-            <div class="card-body">
-              <!-- 發問區 -->
-              <!-- 發問者名字和時間  -->
-              <div class="d-flex align-items-center mb-4">
+            <!-- 發問者內容  -->
+            <div class="card-body d-flex">
+                <!-- 發問者頭像  -->
                 <div class="flex-shrink-0 me-2">
                   <img
                     class="rounded-circle"
@@ -178,34 +174,40 @@ current: index
                     alt="emily"
                   />
                 </div>
-                <div class="flex-grow-1">
-                  Emily Wang <br /><span class="gray-600"
-                    >10:38 AM (4 hours ago)</span
-                  >
+                
+                <div>
+                  <!-- 發問者 名字和時間  -->
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="flex-grow-1">
+                      Emily Wang <br /><span class="gray-600"
+                        >10:38 AM (4 hours ago)</span
+                      >
+                    </div>
+                  </div>
+                 <!-- 發問者內容  -->
+                  <p class="reply-text border-button">
+                    Hi Teacher, the attached file is my homework of chapter 2.
+                    And here comes a question: Why in the following code the
+                    height of the<span class="text-success">div </span> is
+                    bigger than the height of the
+                    <span class="text-success">img </span>? There is a gap below
+                    the image, but it doesn’t seems to be a padding/margin. What
+                    is the gap or extra space below image?
+                    <a
+                      href="#"
+                      class="btn btn-primary fileDownload d-flex mb-3 mt-3"
+                      download="HW-2-David.zip"
+                      ><span class="material-symbols-outlined">
+                        attach_file </span
+                      >HW-2-David.zip</a
+                    >
+                  </p>
                 </div>
-              </div>
-              <!-- 發問者訊息內容  -->
-              <div class="container">
-                <p class="reply-text border-button">
-                  Hi Teacher, the attached file is my homework of chapter 2. And
-                  here comes a question: Why in the following code the height of
-                  the<span class="text-success">div </span> is bigger than the
-                  height of the <span class="text-success">img </span>? There is
-                  a gap below the image, but it doesn’t seems to be a
-                  padding/margin. What is the gap or extra space below image?
-                  <a
-                    href="#"
-                    class="btn btn-primary fileDownload d-flex mb-3 mt-3"
-                    download="HW-2-David.zip"
-                    ><span class="material-symbols-outlined"> attach_file </span
-                    >HW-2-David.zip</a
-                  >
-                </p>
-              </div>
-              <!-- 回覆區 -->
-              <!-- 回覆者名字和時間  -->
-              <div class="replied">
-                <div class="d-flex align-items-center mb-3 position">
+            </div>
+
+             <!-- 回覆者內容 -->
+            <div class="card-body d-flex position">
+                  <!-- 回覆者頭像 -->
                   <div class="flex-shrink-0 me-2 mt-2">
                     <img
                       class="rounded-circle"
@@ -213,159 +215,171 @@ current: index
                       alt="andy"
                     />
                   </div>
-                  <div class="flex-grow-1 d-flex justify-content-between mt-3">
-                    <div>
-                      <p class="mb-0">Andy Chen (You)</p>
-                      <span class="gray-600">13:24 AM (1 hours ago)</span>
-                    </div>
-                    <div>
-                      <span class="material-symbols-outlined me-4 fs-3">
-                        grade
-                      </span>
-                      <span class="material-symbols-outlined fs-3"> edit </span>
-                    </div>
+                  <!-- 回覆者訊息 -->
+                  <div>
+                      <div class="d-flex justify-content-between">
+                       <!-- 回覆者名字時間 -->
+                          <div>
+                          <p class="mb-0">Andy Chen (You)</p>
+                          <span class="gray-600">13:24 AM (1 hours ago)</span>
+                          </div>
+                         <!-- 右編輯icon --> 
+                          <div>
+                          <span class="material-symbols-outlined me-4 fs-4">
+                           grade
+                          </span>
+                          <span class="material-symbols-outlined fs-4">
+                           edit
+                          </span>
+                          </div>
+                     </div>
+                     <!-- 回復訊息內容  -->
+                  <div class="pe-2">
+                    <p class="reply-text">
+           Hi David, by default, an image is rendered inline, like a
+           letter so it sits on the <br />same line that a, b, c and
+           d sit on. There is space below that line for the<br />
+           descenders you find on letters like g, j, p and q.
+           <br />
+           <br />
+           You can: 　
+           <br />
+           <br />
+     
+           • adjust the
+           <span class="text-success">vertical-align </span>of the
+           image to position it elsewhere (e.g. the
+           <span class="text-success">middle </span> ) or 　
+           <br />
+           • change the <span class="text-success">display </span> so
+           it isn’t inline.
+         </p>
+               </div>
                   </div>
-                </div>
-                <!-- 回復訊息內容  -->
-                <div class="container pe-2">
-                  <p class="reply-text">
-                    Hi David, by default, an image is rendered inline, like a
-                    letter so it sits on the <br />same line that a, b, c and d
-                    sit on. There is space below that line for the<br />
-                    descenders you find on letters like g, j, p and q.
-                    <br />
-                    <br />
-                    You can: 　
-                    <br />
-                    <br />
+                  
+            </div>
 
-                    • adjust the
-                    <span class="text-success">vertical-align </span>of the
-                    image to position it elsewhere (e.g. the
-                    <span class="text-success">middle </span> ) or 　
-                    <br />
-                    • change the <span class="text-success">display </span> so
-                    it isn’t inline.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
-          <!-- //start of reply form -->
-          <div class="reply-form">
-            <div class="reply-form-header">
-              <ul>
-                <li>
-                  <select name="bodyText" id="reply-header">
-                    <option value="Body Text" name="bodyText" disabled selected>
-                      Body Text
-                    </option>
-                    <option value="16px" name="bodyText">16px</option>
-                    <option value="24px" name="bodyText">24px</option>
-                    <option value="36px" name="bodyText">36px</option>
-                    <option value="48px" name="bodyText">48px</option>
-                  </select>
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined">
-                      format_bold
-                    </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined">
-                      format_italic
-                    </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined"> list </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined">
-                      format_list_numbered
-                    </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined"> image </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined"> link </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="material-symbols-outlined"> code </span></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="reply-form-body py-4 px-4">
-              <textarea placeholder="reply your answer"> </textarea>
-            </div>
-            <div class="reply-form-btn mb-3 me-4">
-              <button
-                type="button"
-                class="btn btn-outline-success reply-form-btn-cancel"
-                data-bs-dismiss="modal"
-              >
-                cancel
-              </button>
-              <button type="button" class="btn btn-success">Reply</button>
-            </div>
-          </div>
-          <!-- end of reply-form-------------- -->
-
-          <!-- btn read & reply -->
-          <div>
-            <!-- 表尾按鈕 -->
-            <div class="footer-btn mt-3 d-flex justify-content-between pr-8">
-              <!-- arrow icon -->
-              <div class="d-flex justify-content-between mb-4">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link border-0 text-dark" href="#"
-                        ><span class="material-symbols-outlined">
-                          arrow_back_ios
-                        </span></a
-                      >
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link border-0" href="#"
-                        ><span class="text-dark material-symbols-outlined">
-                          arrow_forward_ios
-                        </span></a
-                      >
-                    </li>
-                  </ul>
-                </nav>
+  
+  
+             <!-- //start of reply form -->
+             <div class="reply-form">
+              <div class="reply-form-header">
+                <ul>
+                  <li>
+                    <select name="bodyText" id="reply-header">
+                      <option value="Body Text" name="bodyText" disabled selected>
+                        Body Text
+                      </option>
+                      <option value="16px" name="bodyText">16px</option>
+                      <option value="24px" name="bodyText">24px</option>
+                      <option value="36px" name="bodyText">36px</option>
+                      <option value="48px" name="bodyText">48px</option>
+                    </select>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined">
+                        format_bold
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined">
+                        format_italic
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined"> list </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined">
+                        format_list_numbered
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined"> image </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined"> link </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-symbols-outlined"> code </span></a
+                    >
+                  </li>
+                </ul>
               </div>
-              <!-- reply&make as read -->
-              <div>
-                <button type="button" class="btn btn-outline-success">
-                  Mark as read
-                </button>
+              <div class="reply-form-body py-4 px-4">
+                <textarea placeholder="reply your answer"> </textarea>
+              </div>
+              <div class="reply-form-btn mb-3 me-4">
                 <button
                   type="button"
-                  class="btn btn-outline-success reply-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
+                  class="btn btn-outline-success reply-form-btn-cancel"
+                  data-bs-dismiss="modal"
                 >
-                  Reply
+                  cancel
                 </button>
+                <button type="button" class="btn btn-success">Reply</button>
               </div>
             </div>
-          </div>
+            <!-- end of reply-form-------------- -->
+  
+            <!-- btn read & reply -->
+            <div>
+              <!-- 表尾按鈕 -->
+              <div class="footer-btn mt-3 d-flex justify-content-between pr-8">
+                <!-- arrow icon -->
+                <div class="d-flex justify-content-between mb-4">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link border-0 text-dark" href="#"
+                          ><span class="material-symbols-outlined">
+                            arrow_back_ios
+                          </span></a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link border-0" href="#"
+                          ><span class="text-dark material-symbols-outlined">
+                            arrow_forward_ios
+                          </span></a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- reply&make as read -->
+                <div>
+                  <button type="button" class="btn btn-outline-success">
+                    Mark as read
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success reply-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+    </div>
+              
+   
         </div>
       </div>
     </div>
